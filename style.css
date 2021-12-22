@@ -50,6 +50,11 @@ table {
         1.a) Logo styles
         1.b) Navbar styles
 
+    2. Main styles
+        2.a) Content styles
+        2.b) Main-Article styles
+        2.c) Side-Panel styles
+        2.d) Footer-Article styles
     General Styles
 
 
@@ -58,6 +63,8 @@ table {
 
 
 */
+
+
     
 /*----- Header styles -----*/
 
@@ -71,11 +78,11 @@ header {
 
 /*Logo styles*/
 .logo {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 60%;
     min-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
 }
@@ -86,7 +93,7 @@ header {
     height: 60px;
 }
 
-/*----- Navbar styles -----*/
+/*Navbar styles*/
 .nav {
     display: flex;
     justify-content: space-between;
@@ -147,23 +154,140 @@ svg {
     justify-content: space-between;
 }
 
+
+
+/*----- Main styles -----*/
+main {
+    width: 60%;
+    min-width: 1100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    width: 72%;
+
+}
+
+.article-header{
+
+}
+
+.article-title {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    width: 320px;
+    margin: 1rem 0;
+}
+
+
+
+.side-panel {
+    display: grid;
+
+}
+
+
+
 /*----- General styles -----*/
+.thick-font {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.thin-font {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.small-font {
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+}
+
 .blue-font {
     color: #00b3e5;
-    font-size: inherit;
 }
 
 .grey-font {
     color: #999;
-    font-size: inherit;
 }
 
-.blue-btn {
-    background: #00b3e5;
+.darker-grey-font {
+    color: #4d4d4d;
+}
+
+.default-btn {
     border: none;
     font-weight: inherit;
     font-family: inherit;
     font-size: inherit;
     padding: 0.2rem 1.6rem;
     border-radius: .188rem;
+}
+
+.blue-btn {
+    background: #00b3e5;
+}
+
+.social-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    text-align: center;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.whatsapp {
+    background: #4dc247;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+.reddit {
+    background: #ff5700;
+}
+
+.greySocial {
+    background: #999;
+}
+
+.social-btn svg {
+    height: 28px;
+    width: 28px;
 }
