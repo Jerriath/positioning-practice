@@ -77,22 +77,74 @@ header {
     width: 60%;
     min-width: 1100px;
     align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
 .main-logo {
     object-fit: cover;
-    width: 38%;
+    width: 32%;
     height: 60px;
 }
 
 /*----- Navbar styles -----*/
 .nav {
     display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    min-width: 1100px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.nav::after {
+    position: absolute;
+    content: "";
+    background: #bbb;
+    height: 1px;
+    width: 100vw;
+    top: 8.5rem;
+    left: 0;
 }
 
 .navbar {
     display: flex;
+    width: 80%;
+    justify-content: space-between;
+    
+}
 
+.more::after {
+    content: "»";
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 4px;
+    transform: rotate(90deg);
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.space::after {
+    position: relative;
+    display: block;
+    content: "";
+    background: black;
+    height: 5px;
+    width: 46px;
+    top: 0.45rem;
+}
+
+svg {
+    position: relative;
+    top: 2px;
+}
+
+.sign-in {
+    display: flex;
+    width: 14%;
+    justify-content: space-between;
 }
 
 /*----- General styles -----*/
