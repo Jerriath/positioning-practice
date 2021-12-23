@@ -81,6 +81,7 @@ header {
     width: 60%;
     min-width: 1100px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -109,7 +110,7 @@ header {
     content: "";
     background: #bbb;
     height: 1px;
-    width: 100vw;
+    width: 100%;
     top: 8.5rem;
     left: 0;
 }
@@ -161,6 +162,7 @@ main {
     width: 60%;
     min-width: 1100px;
     margin: 0 auto;
+    padding: 0 15px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -177,20 +179,11 @@ article {
 
 }
 
-.article-header{
-
-}
-
 .article-title {
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
-}
-
-.article-img {
-    width: 100%;
-    height: auto;
 }
 
 .socials {
@@ -199,7 +192,53 @@ article {
     margin: 1rem 0;
 }
 
+.article-img {
+    width: 100%;
+    height: auto;
+}
 
+.read-more {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.more-on-this {
+    display: flex;
+    width: 40%;
+    min-width: 310px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.sponsored {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sponsored-title {
+    background-color: #37b3e5;
+    padding: 0.5rem;
+}
+
+.sponsored-contents {
+    background-color: #f5f5f5;
+    padding: 1rem 0.6rem;
+    display: flex;
+}
+
+.sponsored-img {
+    width: 270px;
+    height: 180px;
+}
+
+.sponsored-text {
+    padding: 0 1rem;
+
+}
 
 .side-panel {
     display: grid;
@@ -224,10 +263,20 @@ article {
 }
 
 .small-font {
-
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     font-size: 12px;
+}
+
+.article-font {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+    font-size: 19px;
+    margin: 1.5rem 0;
+}
+
+.italics-font {
+    font-style: italic;
 }
 
 .blue-font {
@@ -249,10 +298,25 @@ article {
     font-size: inherit;
     padding: 0.2rem 1.6rem;
     border-radius: .188rem;
+    color: white;
+}
+
+.smaller-btn {
+    border: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2rem 0.5rem;
+    border-radius: .188rem;
+    color: white;
 }
 
 .blue-btn {
     background: #00b3e5;
+}
+
+.navy-btn {
+    background: #005587;
 }
 
 .social-btn {
