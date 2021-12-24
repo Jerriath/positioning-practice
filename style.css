@@ -55,7 +55,9 @@ table {
         2.b) Main-Article styles
         2.c) Side-Panel styles
         2.d) Footer-Article styles
-    General Styles
+    3. Gallery Styles
+    4. Footer-Final styles
+    5. General Styles
 
 
 
@@ -174,6 +176,7 @@ main {
     justify-content: space-between;
 }
 
+/*Main-Article styles*/
 article {
     width: 72%;
 
@@ -240,9 +243,114 @@ article {
 
 }
 
+/*Side panel styles*/
 .side-panel {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 26.5%;
+}
 
+.side-navbar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.side-selected {
+    font-size: 14px !important;
+    background-color: #00b3e5;
+    padding: 0.6rem 0.75rem;
+    color: white;
+    margin-right: 3px;
+}
+
+.side-navItem {
+    font-size: 14px !important;
+    background-color: #f5f5f5;
+    padding: 0.6rem 0.82rem;
+    color: black;
+    margin-right: 3px;
+}
+
+.side-box {
+    background-color: #f5f5f5;
+    display: flex;
+    color: #4d4d4d;
+    width: calc(100% - 1.5rem);
+    padding: 1rem 0.75rem;
+    margin-bottom: 3px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-box-left {
+    width: 90%;
+}
+
+.side-box-right {
+    width: 10%;
+    text-align: right;
+}
+
+/*Footer-Article styles*/
+.footer-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-btns {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.footer-btn {
+    margin: 0.3rem 0;
+    padding: 0.45rem 0 !important;
+    text-align: center;
+}
+
+
+
+/*----- Gallery styles -----*/
+.gallery-holder {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-width: 1100px;
+    margin: 0 auto;
+}
+
+.article-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 15px;
+    margin-bottom: 6rem;
+}
+
+.gallery-img {
+    width: 258px !important;
+    height: 172px !important;
+    margin-bottom: 11px;
+}
+
+.gallery-floater {
+    color: white;
+    background-color: #484848;
+    padding: 0.2rem 0.5rem;
+    font-size: 14px !important;
+    position: relative;
+    top: 22px;
+}
+
+
+
+/*----- Footer-Final styles -----*/
+.footer-final {
+    background-color: #f5f5f5;
 }
 
 
@@ -265,7 +373,7 @@ article {
 .small-font {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .article-font {
@@ -317,6 +425,14 @@ article {
 
 .navy-btn {
     background: #005587;
+}
+
+.green-btn {
+    background: rgb(32, 178, 170);
+}
+
+.red-btn {
+    background: #f00;
 }
 
 .social-btn {
