@@ -390,6 +390,21 @@ input {
     border-right: 1px solid black;
 }
 
+.footer-main {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.app-btn {
+    height: 33px;
+    width: 110px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /*----- General styles -----*/
@@ -480,6 +495,15 @@ input {
     text-align: center;
 }
 
+.small-social-btn {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-right: 16px;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
 .facebook {
     background: #3b5998;
 }
@@ -498,6 +522,10 @@ input {
 
 .reddit {
     background: #ff5700;
+}
+
+.pinterest {
+    background: #cb2027;
 }
 
 .greySocial {
